@@ -1,0 +1,16 @@
+ynov\david\dao\MySQLManager.class
+ynov\david\servlets\AddArticle.class
+ynov\david\servlets\Index.class
+ynov\david\servlets\DeleteArticle.class
+ynov\david\servlets\AdminArticle.class
+ynov\david\servlets\Article.class
+ynov\david\model\User.class
+ynov\david\model\Article.class
+ynov\david\dao\DaoArticleImpl.class
+ynov\david\dao\DAOUserImpl.class
+ynov\david\servlets\Author.class
+ynov\david\servlets\Post.class
+ynov\david\dao\DAOFactory.class
+ynov\david\dao\DAOUser.class
+ynov\david\servlets\UpdateArticle.class
+ynov\david\dao\DaoArticle.class
