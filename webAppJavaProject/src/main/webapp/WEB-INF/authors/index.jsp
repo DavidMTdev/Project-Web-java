@@ -31,8 +31,6 @@
 							<div class="dropdown-menu"
 								style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;"
 								x-placement="bottom-start">
-								<a class="dropdown-item" href="#">Publier</a>
-								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="/webAppJavaProject/article/add/">Ajouter</a> <a
 									class="dropdown-item" href="/webAppJavaProject/article/admin/">Modifier</a>
 								<a class="dropdown-item" href="/webAppJavaProject/article/admin/">Supprimer</a>
@@ -55,10 +53,12 @@
 						<h5 class="card-header">Recherhe</h5>
 						<div class="card-body">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search for..."> <span
-									class="input-group-btn">
-									<button class="btn btn-secondary" type="button">Go!</button>
-								</span>
+								<form action="" method="get">
+									<input type="text" class="form-control" placeholder="Search for..." name="author">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="submit">Go!</button>
+									</span>
+								</form>
 							</div>
 						</div>
 					</div>

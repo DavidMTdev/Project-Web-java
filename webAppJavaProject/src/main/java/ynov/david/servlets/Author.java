@@ -11,23 +11,21 @@ import ynov.david.dao.DAOFactory;
 import ynov.david.dao.DAOUser;
 import ynov.david.dao.DaoArticle;;
 
-
-
 public class Author extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    	
-    	 DAOFactory factory = new DAOFactory();
-    	 DAOUser daoUser = factory.getDaoUser();
-    	 DaoArticle daoArticle = factory.getDaoArticle();
-    	 
-    	 if (req.getParameter("author") != null) {
-    		 
-             req.setAttribute("articles", daoArticle.getAllArticleFromUser(req.getParameter("author")));
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		DAOFactory factory = new DAOFactory();
+		DAOUser daoUser = factory.getDaoUser();
+		DaoArticle daoArticle = factory.getDaoArticle();
+
+		if (req.getParameter("author") != null) {
+
+			req.setAttribute("articles", daoArticle.getAllArticleFromUser(req.getParameter("author")));
 		}
-    	 
-    	 req.setAttribute("authors", daoUser.getAllUsers());
-    	
-        this.getServletContext().getRequestDispatcher("/WEB-INF/authors/index.jsp").forward(req, resp);
-    }
+
+		req.setAttribute("authors", daoUser.getAllUsers());
+
+		this.getServletContext().getRequestDispatcher("/WEB-INF/authors/index.jsp").forward(req, resp);
+	}
 }

@@ -12,24 +12,34 @@
 
 <body>
     <header>
-       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<div class="container">
-				<a class="navbar-brand" href="/webAppJavaProject/">Java Project Blog</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarResponsive" aria-controls="navbarResponsive"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="/webAppJavaProject/">Accueil
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="/webAppJavaProject/article/">Articles</a></li>
-						<li class="nav-item"><a class="nav-link" href="/webAppJavaProject/authors/">Auteurs</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="/webAppJavaProject/">Java Project
+                    Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="/webAppJavaProject/">Accueil </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/webAppJavaProject/article/">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/webAppJavaProject/authors/">Auteurs</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                href="#" role="button" aria-haspopup="true" aria-expanded="true">Mes
+                                Articles</a>
+                            <div class="dropdown-menu"
+                                style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;"
+                                x-placement="bottom-start">
+                                <a class="dropdown-item" href="/webAppJavaProject/article/add/">Ajouter</a> <a
+                                    class="dropdown-item" href="/webAppJavaProject/article/admin/">Modifier</a>
+                                <a class="dropdown-item" href="/webAppJavaProject/article/admin/">Supprimer</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container">

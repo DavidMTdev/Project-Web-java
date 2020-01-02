@@ -31,8 +31,6 @@
 							<div class="dropdown-menu"
 								style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;"
 								x-placement="bottom-start">
-								<a class="dropdown-item" href="#">Publier</a>
-								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="/webAppJavaProject/article/add/">Ajouter</a> <a
 									class="dropdown-item" href="/webAppJavaProject/article/admin/">Modifier</a>
 								<a class="dropdown-item" href="/webAppJavaProject/article/admin/">Supprimer</a>
@@ -52,9 +50,8 @@
 							<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
 							<div class="card-body">
 								<h4 class="card-title">
-									<a href="/webAppJavaProject/article/post/?id=<c:out value=" ${ article.getId()
-										}" />">
-									<c:out value="${ article.getTitle() }" /></a>
+									<a href="/webAppJavaProject/article/post/?id=<c:out value='${ article.getId()}' />">
+										<c:out value="${ article.getTitle() }" /></a>
 								</h4>
 								<h5>
 									<c:out value="${ article.getAuthor() }" />

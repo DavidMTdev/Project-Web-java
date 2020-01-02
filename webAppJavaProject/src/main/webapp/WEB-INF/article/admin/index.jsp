@@ -31,8 +31,6 @@
                             <div class="dropdown-menu"
                                 style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;"
                                 x-placement="bottom-start">
-                                <a class="dropdown-item" href="#">Publier</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/webAppJavaProject/article/add/">Ajouter</a> <a
                                     class="dropdown-item" href="/webAppJavaProject/article/admin/">Modifier</a> <a
                                     class="dropdown-item" href="/webAppJavaProject/article/admin/">Supprimer</a>
